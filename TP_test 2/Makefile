@@ -1,0 +1,15 @@
+#Standard include and library path for GL/ and libGL, libGLU, libglut, update if needed
+INCLUDEDIR = -I/usr/include/
+LIBDIR = -L/usr/lib64/
+
+tp0: tp0.o glew.o glsl.o
+	g++ $(LIBDIR) tp0.o glew.o glsl.o -lGL -lGLU -lglut -o tp0
+
+tp0.o: tp0.cpp
+	g++ -c $(INCLUDEDIR) tp0.cpp
+
+glew.o: glew/src/glew.c
+	g++ -c $(INCLUDEDIR) -I glew/include/ glew/src/glew.c
+
+glsl.o: glsl.cpp
+	g++ -c $(INCLUDEDIR) -I glew/include/ glsl.cpp
