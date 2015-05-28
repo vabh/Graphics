@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tp1_materials", "tp1_materials.vcxproj", "{E98B8E59-2F29-4A1D-94B6-A1558067B67D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E98B8E59-2F29-4A1D-94B6-A1558067B67D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E98B8E59-2F29-4A1D-94B6-A1558067B67D}.Debug|Win32.Build.0 = Debug|Win32
+		{E98B8E59-2F29-4A1D-94B6-A1558067B67D}.Release|Win32.ActiveCfg = Release|Win32
+		{E98B8E59-2F29-4A1D-94B6-A1558067B67D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

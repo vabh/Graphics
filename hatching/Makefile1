@@ -1,0 +1,21 @@
+#Standard include and library path for GL/ and libGL, libGLU, libglut, update if needed
+INCLUDEDIR = -I/usr/include/
+LIBDIR = -L/usr/lib64/
+
+main: main.o glew.o glsl.o Vertex.o Trackball.o
+	g++ $(LIBDIR) main.o glew.o glsl.o Vertex.o Trackball.o -lGL -lGLU -lglut -o main
+
+main.o: main.cpp
+	g++ -c $(INCLUDEDIR) main.cpp
+
+glew.o: glew/src/glew.c
+	g++ -c $(INCLUDEDIR) -I glew/include/ glew/src/glew.c
+
+glsl.o: glsl.cpp
+	g++ -c $(INCLUDEDIR) -I glew/include/ glsl.cpp
+
+Vertex.o: Vertex.cpp
+	g++ -c $(INCLUDEDIR) Vertex.cpp
+
+Trackball.o: Trackball.cpp
+	g++ -c $(INCLUDEDIR) Trackball.cpp
